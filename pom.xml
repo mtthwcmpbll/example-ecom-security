@@ -13,6 +13,30 @@
     <spring.boot.version>2.7.18</spring.boot.version>
   </properties>
 
+  <distributionManagement>
+    <repository>
+        <id>moderne-demo</id>
+        <name>Moderne Artifactory-releases</name>
+        <url>https://artifactory.moderne.ninja/artifactory/moderne-demo</url>
+    </repository>
+    <snapshotRepository>
+        <id>moderne-demo-snapshots</id>
+        <name>Moderne Artifactory-snapshots</name>
+        <url>https://artifactory.moderne.ninja/artifactory/moderne-demo</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>moderne-cache-3</id>
+      <url>https://artifactory.moderne.ninja/artifactory/moderne-cache-3</url>
+    </repository>
+    <repository>
+      <id>moderne-cache-3-snapshots</id>
+      <url>https://artifactory.moderne.ninja/artifactory/moderne-cache-3</url>
+    </repository>
+  </repositories>
+
   <dependencies>
     <dependency>
         <groupId>com.example.ecom</groupId>
